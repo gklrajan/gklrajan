@@ -98,23 +98,30 @@
 
 								<p> You can <strong>book a short 30-minute meeting</strong> with me using the button below.  I’ve tried to choose a time that’s globally inclusive — sorry if it’s too early or too late in your zone! </p>
 
-								<!-- Google Calendar Appointment Scheduling begin -->
-								<link href="https://calendar.google.com/calendar/scheduling-button-script.css" rel="stylesheet">
-								<script src="https://calendar.google.com/calendar/scheduling-button-script.js" async></script>
-								<script>
-								  (function() {
-								    var target = document.currentScript;
-								    window.addEventListener('load', function() {
-								      calendar.schedulingButton.load({
-								        url: 'https://calendar.google.com/calendar/appointments/schedules/AcZssZ2TW9dA0ZoujyCUTqe-z7guyFsfQSffLSp7Tlpk3ztZ62fz20L5f-RKiVcg7ZzeXOuDN8qHRPUU?gv=true',
-								        color: '#039BE5',
-								        label: 'Book an appointment',
-								        target,
-								      });
-								    });
-								  })();
-								</script>
-								<!-- end Google Calendar Appointment Scheduling -->
+								<p>
+								  You can <strong>book a short 30-minute meeting</strong> with me using the button below.  
+								  I’ve tried to choose a time that’s globally inclusive — sorry if it’s too early or too late in your zone!
+								</p>
+								
+								<!-- Custom-styled amber appointment button -->
+								<a href="https://calendar.google.com/calendar/appointments/schedules/AcZssZ2TW9dA0ZoujyCUTqe-z7guyFsfQSffLSp7Tlpk3ztZ62fz20L5f-RKiVcg7ZzeXOuDN8qHRPUU?gv=true" 
+								   target="_blank" 
+								   style="
+								     display: inline-block;
+								     padding: 0.75em 1.5em;
+								     background-color: #FFB300;
+								     color: #000000;
+								     text-decoration: none;
+								     border-radius: 6px;
+								     font-weight: bold;
+								     font-size: 1em;
+								     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.25);
+								     transition: background-color 0.3s ease, transform 0.2s ease;
+								   "
+								   onmouseover="this.style.backgroundColor='#FFA000'; this.style.transform='scale(1.02)'"
+								   onmouseout="this.style.backgroundColor='#FFB300'; this.style.transform='scale(1.0)'">
+								   📅 Book an Appointment
+								</a>
 							</article>
 
 						<!-- Elements -->
@@ -378,4 +385,5 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
 
 	</body>
 </html>
+
 
