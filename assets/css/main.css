@@ -1670,3 +1670,5 @@ input, select, textarea {
 			font-family: inherit;
 			cursor: pointer;
 		}
+
+		#contact ul.icons { margin-top: 1rem; margin-bottom: 4rem; }
